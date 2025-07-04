@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Переход...</title>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const utm = urlParams.toString();
+    const target = "https://n145888.yclients.com/company/153270/personal/menu";
+    const redirectUrl = utm ? `${target}?${utm}` : target;
+    window.location.href = redirectUrl;
+  </script>
+</head>
+<body>
+  <p>Переход...</p>
+</body>
+</html>
